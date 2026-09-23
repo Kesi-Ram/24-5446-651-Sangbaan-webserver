@@ -1,0 +1,25 @@
+
+body{
+    background-color: cadetblue;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    color:aliceblue;
+}
+nav a:hover{
+    color:red;
+}
+
+.header{
+    color: aliceblue;
+}
+
+.img{
+    margin-top: 20px;
+}
