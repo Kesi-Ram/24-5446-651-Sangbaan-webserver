@@ -3,7 +3,7 @@ CREATE DATABASE school;
 USE school;
 
 CREATE TABLE students(
-    id INT AUTO_INCREMENET PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
     course VARCHAR(100),
     year_level INT
@@ -20,10 +20,10 @@ VALUES
 SELECT * FROM students;
 --filter data
 --show students data only in BSIT
-SELECT * FROM students;
-WHERE course = 'BSIT'
+SELECT * FROM students
+WHERE course = 'BSIT';
 --show students data in year 2 or higher
-SELECT * FROM students;
+SELECT * FROM students
 WHERE year_level >= 2;
 
 --Adding another student
@@ -41,7 +41,7 @@ DELETE FROM students
 WHERE name = 'Pedro Reyes';
 
 CREATE TABLE courses(
-    course_id INT AUTO_INCREMENET PRIMARY KEY,
+    course_id INT AUTO_INCREMENT PRIMARY KEY,
     course_name VARCHAR(100),
     description VARCHAR(100),
     units INT
