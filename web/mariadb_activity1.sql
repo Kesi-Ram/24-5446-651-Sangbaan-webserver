@@ -1,8 +1,8 @@
-CREATE DATABASE school;
+CREATE DATABASE IF NOT EXISTS school;
 
 USE school;
 
-CREATE TABLE students(
+CREATE TABLE IF NOT EXISTS students(
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
     course VARCHAR(100),
@@ -40,7 +40,7 @@ WHERE name = 'Juan Dela Cruz';
 DELETE FROM students
 WHERE name = 'Pedro Reyes';
 
-CREATE TABLE courses(
+CREATE TABLE IF NOT EXISTS courses(
     course_id INT AUTO_INCREMENT PRIMARY KEY,
     course_name VARCHAR(100),
     description VARCHAR(100),
